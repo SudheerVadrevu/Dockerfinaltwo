@@ -3,7 +3,7 @@ networks:
   default:
     name: sudheer
 volumes:
-  name: simham
+  - name: simham
 
 services:
   mysql:

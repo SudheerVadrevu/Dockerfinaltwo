@@ -4,7 +4,7 @@ networks:
     name: sudheer
 volumes:
   simham:
-    external: true
+    external: false
 
 services:
   mysql:

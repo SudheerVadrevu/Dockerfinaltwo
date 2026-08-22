@@ -1,0 +1,25 @@
+name: expense
+networks:
+  default:
+    name: sudheer
+
+services:
+  mysql:
+    image: mysql:0.0
+    container_name: mysql
+  
+  backend:
+    image: backend:0.0
+    container_name: backend
+    depends_on:
+      - mysql
+    ports:
+      - 8080:8080
+  
+  frontend:
+    image: frontend:0.0
+    container_name: frontend
+    depends_on:
+      - backend
+    ports:
+      - 80:80

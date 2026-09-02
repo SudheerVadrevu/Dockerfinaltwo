@@ -28,7 +28,7 @@ services:
   
   frontend:
     #image: frontend:0.0
-    image: sudheer1995/superfrontend:0.0
+    image: sudheer1995/superfrontend:5.5
     container_name: frontend
     depends_on:
       - backend
